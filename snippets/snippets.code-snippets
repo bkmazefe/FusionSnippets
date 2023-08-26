@@ -1,0 +1,138 @@
+{
+	"InitFusion": {
+		"prefix": [
+			"require Fusion"
+		],
+		"body": [
+			"local Fusion = require(game.ReplicatedStorage.Packages.Fusion)",
+			"local Value, Observer, Computed, ForKeys, ForValues, ForPairs,New, Children, OnEvent, OnChange, Out, Ref, Cleanup, cleanup, Hydrate, Tween, Spring = Fusion.Value, Fusion.Observer, Fusion.Computed, Fusion.ForKeys, Fusion.ForValues, Fusion.ForPairs,Fusion.New, Fusion.Children, Fusion.OnEvent, Fusion.OnChange, Fusion.Out, Fusion.Ref, Fusion.Cleanup, Fusion.cleanup, Fusion.Hydrate, Fusion.Tween, Fusion.Spring",
+			""
+		]
+	},
+	"FusionFrame": {
+		"prefix": [
+			"New Frame"
+		],
+		"body": [
+			"New \"Frame\" {",
+			"\tName =  \"\",",
+			"\tAnchorPoint =  Vector2.new(0, 0),",
+			"\tBackgroundTransparency = 1,",
+			"\tBackgroundColor3 = Color3.fromRGB(255, 255, 255),",
+			"\tPosition = UDim2.fromScale(0, 0),",
+			"\tSize = UDim2.fromScale(0, 0),",
+			"\t[Children] = {},",
+			"}",
+		]
+	},
+	"FusionImageLabel": {
+		"prefix": [
+			"New ImageLabel"
+		],
+		"body": [
+			"New \"ImageLabel\" {",
+			"\tName =  \"\",",
+			"\tAnchorPoint =  Vector2.new(0, 0),",
+			"\tBackgroundTransparency = 1,",
+			"\tPosition = UDim2.fromScale(0, 0),",
+			"\tSize = UDim2.fromScale(0, 0),",
+			"\tImage = \"\",",
+			"\t[Children] = {},",
+			"}",
+		]
+	},
+	"FusionTextLabel": {
+		"prefix": [
+			"New TextLabel"
+		],
+		"body": [
+			"New \"TextLabel\" {",
+			"\tName =  \"\",",
+			"\tAnchorPoint =  Vector2.new(0, 0),",
+			"\tBackgroundTransparency = 1,",
+			"\tPosition = UDim2.fromScale(0, 0),",
+			"\tSize = UDim2.fromScale(0, 0),",
+			"\tFont = \"\",",
+			"\tTextScaled = true,",
+			"\tTextColor3 = Color3.fromRGB(0, 0, 0),",
+			"\tText = \"\",",
+			"\tTextXAlignment = \"Center\",",
+			"\t[Children] = {},",
+			"}",
+		]
+	},
+	"FusionListLayout": {
+		"prefix": [
+			"New UIListLayout"
+		],
+		"body": [
+			"New \"UIListLayout\" {",
+			"\tPadding = UDim.new(0, 0),",
+			"\tFillDirection = \"Horizontal\",",
+			"\tHorizontalAlignment = \"Left\",",
+			"\tSortOrder = \"LayoutOrder\",",
+			"\tVerticalAlignment = \"Center\",",
+			"}",
+		]
+	},
+	"FusionGridLayout": {
+		"prefix": [
+			"New UIGridLayout"
+		],
+		"body": [
+			"New \"UIGridLayout\" {",
+			"\tCellPadding = UDim2.fromScale(0, 0),",
+			"\tCellSize = UDim2.fromScale(0, 0),",
+			"\tFillDirection = \"Horizontal\",",
+			"\tFillDirectionMaxCells = 0,",
+			"\tHorizontalAlignment = \"Left\",",
+			"\tSortOrder = \"LayoutOrder\",",
+			"\tVerticalAlignment = \"Top\",",
+			"}",
+		]
+	},
+	"FusionAspectRatio": {
+		"prefix": [
+			"New UIAspectRatioConstraint"
+		],
+		"body": [
+			"New \"UIAspectRatioConstraint\" {",
+			"\tAspectRatio = 1,",
+			"\tDominantAxis = \"Width\",",
+			"\tAspectType = \"FitWithinMaxSize\",",
+			"}",
+		]
+	},
+	"FusionSize": {
+		"prefix": [
+			"New UISizeConstraint"
+		],
+		"body": [
+			"New \"UISizeConstraint\" {",
+			"\tMaxSize = Vector2.new(9999, 9999),",
+			"\tMinSize = Vector2.new(0, 0),",
+			"}",
+		]
+	},
+	"FusionStroke": {
+		"prefix": [
+			"New UIStroke"
+		],
+		"body": [
+			"New \"UIStroke\" {",
+			"\tColor = Color3.fromRGB(0, 0, 0),",
+			"\tThickness = 1,",
+			"}",
+		]
+	},
+	"FusionCorner": {
+		"prefix": [
+			"New UICorner"
+		],
+		"body": [
+			"New \"UICorner\" {",
+			"\tCornerRadius = UDim.new(0, 0)",
+			"}",
+		]
+	},
+}

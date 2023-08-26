@@ -1,0 +1,26 @@
+{
+  "name": "fusion-snippets",
+  "displayName": "FusionSnippets",
+  "description": "Snippets extension to increase the speed of developing your Fusion projects",
+  "version": "0.0.1",
+  "publisher": "bkmazefe",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "lua",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bkmazefe/FusionSnippets"
+  },
+  "pricing": "Free"
+}

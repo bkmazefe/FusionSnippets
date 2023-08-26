@@ -1,2 +1,1 @@
-# FusionSnippets
- A snippets extension to increase the speed of developing your Fusion projects
+A snippet extension for the Fusion UI library. This extension only supports luau, currently.
