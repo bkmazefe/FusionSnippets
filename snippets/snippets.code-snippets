@@ -9,6 +9,7 @@
 			""
 		]
 	},
+	//Components
 	"FusionFrame": {
 		"prefix": [
 			"New Frame"
@@ -103,7 +104,7 @@
 			"}",
 		]
 	},
-	"FusionSize": {
+	"FusionSizeConstraint": {
 		"prefix": [
 			"New UISizeConstraint"
 		],
@@ -135,4 +136,35 @@
 			"}",
 		]
 	},
+	//Events
+	"FusionMouseEnter": {
+		"prefix": [
+			"MouseEnter"
+		],
+		"body": [
+			"[OnEvent \"MouseEnter\"] = function()",
+			"\t-- do stuff",
+			"end"
+		]
+	},
+	"FusionMouseLeave": {
+		"prefix": [
+			"MouseLeave"
+		],
+		"body": [
+			"[OnEvent \"MouseLeave\"] = function()",
+			"\t-- do stuff",
+			"end"
+		]
+	},
+	"FusionMouseActivated": {
+		"prefix": [
+			"Activated"
+		],
+		"body": [
+			"[OnEvent \"Activated\"] = function()",
+			"\t-- do stuff",
+			"end"
+		]
+	}
 }
