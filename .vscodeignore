@@ -1,0 +1,6 @@
+.vscode/**
+.vscode-test/**
+.gitignore
+sample1.png
+sample2.png
+vsc-extension-quickstart.md

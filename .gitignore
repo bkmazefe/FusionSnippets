@@ -1,6 +1,5 @@
 
 vsc-extension-quickstart.md
 CHANGELOG.md
-.vscodeignore
 *.vsix
 .DS_Store
