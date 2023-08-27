@@ -4,5 +4,5 @@
 A snippet extension for the Fusion UI library. This extension only supports luau, currently.
 
 To Use:
-* Type 'New <uicomponentname>' to create a Fusion object.
-* Type 'New <eventname>' to create a Fusion event.
+* Type 'New \<uicomponentname\>' to create a Fusion object.
+* Type 'New \<eventname\>' to create a Fusion event.

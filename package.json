@@ -1,8 +1,8 @@
 {
   "name": "snippets-fusion",
   "displayName": "FusionSnippets",
-  "description": "Snippets extension to increase the speed of developing your Fusion projects",
-  "version": "0.1.0",
+  "description": "Snippets for Fusion UI library to increase the speed of developing your Fusion projects",
+  "version": "0.1.1",
   "publisher": "bkmazefe",
   "engines": {
     "vscode": "^1.81.0"
