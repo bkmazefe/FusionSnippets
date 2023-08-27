@@ -9,6 +9,19 @@
 			""
 		]
 	},
+	"FusionScreenGui": {
+		"prefix": [
+			"New ScreenGui"
+		],
+		"body": [
+			"New \"ScreenGui\" {",
+			"\t--Parent = Players.LocalPlayer.PlayerGui,",
+			"\tName = \"\",",
+			"",
+			"\t[Children] = {},",
+			"}",
+		]
+	},
 	//Components
 	"FusionFrame": {
 		"prefix": [
@@ -20,8 +33,52 @@
 			"\tAnchorPoint =  Vector2.new(0, 0),",
 			"\tBackgroundTransparency = 1,",
 			"\tBackgroundColor3 = Color3.fromRGB(255, 255, 255),",
-			"\tPosition = UDim2.fromScale(0, 0),",
-			"\tSize = UDim2.fromScale(0, 0),",
+			"\tPosition = UDim2.new(0, 0, 0, 0),",
+			"\tSize = UDim2.new(0, 0, 0, 0),",
+			"",
+			"\t[Children] = {},",
+			"}",
+		]
+	},
+	"FusionScrollingFrame": {
+		"prefix": [
+			"New ScrollingFrame"
+		],
+		"body": [
+			"New \"ScrollingFrame\" {",
+			"\tName =  \"\",",
+			"\tAnchorPoint =  Vector2.new(0, 0),",
+			"\tBackgroundTransparency = 1,",
+			"\tBackgroundColor3 = Color3.fromRGB(255, 255, 255),",
+			"\tPosition = UDim2.new(0, 0, 0, 0),",
+			"\tSize = UDim2.new(0, 0, 0, 0),",
+			"\tAutomaticCanvasSize = Enum.AutomaticSize.None,",
+			"\tCanvasSize = UDim2.new(0, 0, 0, 0),",
+			"\tScrollBarImageColor3 = Color3.fromRGB(0, 0, 0),",
+			"\tScrollBarThickness = 12,",
+			"\tScrollingDirection = Enum.ScrollingDirection.XY,",
+			"",
+			"\t[Children] = {},",
+			"}",
+		]
+	},
+	"FusionViewportFrame": {
+		"prefix": [
+			"New ViewportFrame"
+		],
+		"body": [
+			"New \"ViewportFrame\" {",
+			"\tName =  \"\",",
+			"\tSelectionImageObject = nil,",
+			"\tAnchorPoint =  Vector2.new(0, 0),",
+			"\tBackgroundTransparency = 1,",
+			"\tBackgroundColor3 = Color3.fromRGB(255, 255, 255),",
+			"\tPosition = UDim2.new(0, 0, 0, 0),",
+			"\tSize = UDim2.new(0, 0, 0, 0),",
+			"\tAmbient = Color3.fromRGB(200, 200, 200),",
+			"\tLightColor = Color3.fromRGB(140, 140, 140),",
+			"\tLightDirection = Vector3.new(-1, -1, -1),",
+			"",
 			"\t[Children] = {},",
 			"}",
 		]
@@ -35,9 +92,31 @@
 			"\tName =  \"\",",
 			"\tAnchorPoint =  Vector2.new(0, 0),",
 			"\tBackgroundTransparency = 1,",
-			"\tPosition = UDim2.fromScale(0, 0),",
-			"\tSize = UDim2.fromScale(0, 0),",
+			"\tPosition = UDim2.new(0, 0, 0, 0),",
+			"\tSize = UDim2.new(0, 0, 0, 0),",
 			"\tImage = \"\",",
+			"",
+			"\t[Children] = {},",
+			"}",
+		]
+	},
+	"FusionImageButton": {
+		"prefix": [
+			"New ImageButton"
+		],
+		"body": [
+			"New \"ImageLabel\" {",
+			"\tName =  \"\",",
+			"\tAnchorPoint =  Vector2.new(0, 0),",
+			"\tBackgroundTransparency = 1,",
+			"\tPosition = UDim2.new(0, 0, 0, 0),",
+			"\tSize = UDim2.new(0, 0, 0, 0),",
+			"\tImage = \"\",",
+			"",
+			"\t[OnEvent \"Activated\"] = function()",
+			"\t--do stuff",
+			"end,",
+			"",
 			"\t[Children] = {},",
 			"}",
 		]
@@ -51,13 +130,83 @@
 			"\tName =  \"\",",
 			"\tAnchorPoint =  Vector2.new(0, 0),",
 			"\tBackgroundTransparency = 1,",
-			"\tPosition = UDim2.fromScale(0, 0),",
-			"\tSize = UDim2.fromScale(0, 0),",
+			"\tPosition = UDim2.new(0, 0, 0, 0),",
+			"\tSize = UDim2.new(0, 0, 0, 0),",
 			"\tFont = \"\",",
 			"\tTextScaled = true,",
 			"\tTextColor3 = Color3.fromRGB(0, 0, 0),",
 			"\tText = \"\",",
 			"\tTextXAlignment = \"Center\",",
+			"",
+			"\t[Children] = {},",
+			"}",
+		]
+	},
+	"FusionTextButton": {
+		"prefix": [
+			"New TextButton"
+		],
+		"body": [
+			"New \"TextButton\" {",
+			"\tName =  \"\",",
+			"\tAnchorPoint =  Vector2.new(0, 0),",
+			"\tBackgroundTransparency = 1,",
+			"\tPosition = UDim2.new(0, 0, 0, 0),",
+			"\tSize = UDim2.new(0, 0, 0, 0),",
+			"\tFont = \"\",",
+			"\tTextScaled = true,",
+			"\tTextColor3 = Color3.fromRGB(0, 0, 0),",
+			"\tText = \"\",",
+			"\tTextXAlignment = \"Center\",",
+			"",
+			"\t[OnEvent \"Activated\"] = function()",
+			"\t--do stuff",
+			"end,",
+			"",
+			"\t[Children] = {},",
+			"}",
+		]
+	},
+	"FusionTextBox": {
+		"prefix": [
+			"New TextBox"
+		],
+		"body": [
+			"New \"TextBox\" {",
+			"\tName =  \"\",",
+			"\tAnchorPoint =  Vector2.new(0, 0),",
+			"\tBackgroundTransparency = 1,",
+			"\tPosition = UDim2.new(0, 0, 0, 0),",
+			"\tSize = UDim2.new(0, 0, 0, 0),",
+			"\tFont = \"\",",
+			"\tTextScaled = true,",
+			"\tPlaceholderColor3 = Color3.fromRGB(0, 0, 0),",
+			"\tTextColor3 = Color3.fromRGB(0, 0, 0),",
+			"\tText = \"\",",
+			"\tTextXAlignment = \"Center\",",
+			"\tClearTextOnFocus = true,",
+			"\tPlaceholderText = \"[Search pet...]\",",
+			"",
+			"\t[Children] = {},",
+			"}",
+		]
+	},
+	"FusionCanvasGroup": {
+		"prefix": [
+			"New CanvasGroup"
+		],
+		"body": [
+			"New \"CanvasGroup\" {",
+			"\tName = \"\",",
+			"\tGroupColor3 = Color3.fromRGB(255, 255, 255),",
+			"\tGroupTransparency = 0,",
+			"\tSelectionImageObject = nil,",
+			"\tAnchorPoint =  Vector2.new(0, 0),",
+			"\tBackgroundTransparency = 1,",
+			"\tBackgroundColor3 = Color3.fromRGB(255, 255, 255),",
+			"\tPosition = UDim2.new(0, 0, 0, 0),",
+			"\tSize = UDim2.new(0, 0, 0, 0),",
+			"",
 			"\t[Children] = {},",
 			"}",
 		]
@@ -82,8 +231,8 @@
 		],
 		"body": [
 			"New \"UIGridLayout\" {",
-			"\tCellPadding = UDim2.fromScale(0, 0),",
-			"\tCellSize = UDim2.fromScale(0, 0),",
+			"\tCellPadding = UDim2.new(0, 0, 0, 0),",
+			"\tCellSize = UDim2.new(0, 0, 0, 0),",
 			"\tFillDirection = \"Horizontal\",",
 			"\tFillDirectionMaxCells = 0,",
 			"\tHorizontalAlignment = \"Left\",",
@@ -136,6 +285,27 @@
 			"}",
 		]
 	},
+	"FusionTextSizeConstraint": {
+		"prefix": [
+			"New UITextSizeConstraint"
+		],
+		"body": [
+			"New \"UITextSizeConstraint\" {",
+			"\tMaxTextSize = 100,",
+			"\tMinTextSize = 1,",
+			"}",
+		]
+	},
+	"FusionScale": {
+		"prefix": [
+			"New UIScale"
+		],
+		"body": [
+			"New \"UIScale\" {",
+			"\tScale = 1,",
+			"}",
+		]
+	},
 	//Events
 	"FusionMouseEnter": {
 		"prefix": [
@@ -143,7 +313,7 @@
 		],
 		"body": [
 			"[OnEvent \"MouseEnter\"] = function()",
-			"\t-- do stuff",
+			"\t--do stuff",
 			"end"
 		]
 	},
@@ -153,7 +323,7 @@
 		],
 		"body": [
 			"[OnEvent \"MouseLeave\"] = function()",
-			"\t-- do stuff",
+			"\t--do stuff",
 			"end"
 		]
 	},
@@ -163,7 +333,7 @@
 		],
 		"body": [
 			"[OnEvent \"Activated\"] = function()",
-			"\t-- do stuff",
+			"\t--do stuff",
 			"end"
 		]
 	}
