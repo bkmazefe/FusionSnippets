@@ -1,5 +1,6 @@
 {
 	"InitFusion": {
+		"scope": "lua, luau",
 		"prefix": [
 			"require Fusion"
 		],
@@ -10,6 +11,7 @@
 		]
 	},
 	"FusionScreenGui": {
+		"scope": "lua, luau",
 		"prefix": [
 			"New ScreenGui"
 		],
@@ -24,6 +26,7 @@
 	},
 	//Components
 	"FusionFrame": {
+		"scope": "lua, luau",
 		"prefix": [
 			"New Frame"
 		],
@@ -41,6 +44,7 @@
 		]
 	},
 	"FusionScrollingFrame": {
+		"scope": "lua, luau",
 		"prefix": [
 			"New ScrollingFrame"
 		],
@@ -63,6 +67,7 @@
 		]
 	},
 	"FusionViewportFrame": {
+		"scope": "lua, luau",
 		"prefix": [
 			"New ViewportFrame"
 		],
@@ -84,6 +89,7 @@
 		]
 	},
 	"FusionImageLabel": {
+		"scope": "lua, luau",
 		"prefix": [
 			"New ImageLabel"
 		],
@@ -101,6 +107,7 @@
 		]
 	},
 	"FusionImageButton": {
+		"scope": "lua, luau",
 		"prefix": [
 			"New ImageButton"
 		],
@@ -122,6 +129,7 @@
 		]
 	},
 	"FusionTextLabel": {
+		"scope": "lua, luau",
 		"prefix": [
 			"New TextLabel"
 		],
@@ -143,6 +151,7 @@
 		]
 	},
 	"FusionTextButton": {
+		"scope": "lua, luau",
 		"prefix": [
 			"New TextButton"
 		],
@@ -168,6 +177,7 @@
 		]
 	},
 	"FusionTextBox": {
+		"scope": "lua, luau",
 		"prefix": [
 			"New TextBox"
 		],
@@ -193,6 +203,7 @@
 		]
 	},
 	"FusionCanvasGroup": {
+		"scope": "lua, luau",
 		"prefix": [
 			"New CanvasGroup"
 		],
@@ -213,6 +224,7 @@
 		]
 	},
 	"FusionListLayout": {
+		"scope": "lua, luau",
 		"prefix": [
 			"New UIListLayout"
 		],
@@ -227,6 +239,7 @@
 		]
 	},
 	"FusionGridLayout": {
+		"scope": "lua, luau",
 		"prefix": [
 			"New UIGridLayout"
 		],
@@ -243,6 +256,7 @@
 		]
 	},
 	"FusionAspectRatio": {
+		"scope": "lua, luau",
 		"prefix": [
 			"New UIAspectRatioConstraint"
 		],
@@ -255,6 +269,7 @@
 		]
 	},
 	"FusionSizeConstraint": {
+		"scope": "lua, luau",
 		"prefix": [
 			"New UISizeConstraint"
 		],
@@ -266,6 +281,7 @@
 		]
 	},
 	"FusionStroke": {
+		"scope": "lua, luau",
 		"prefix": [
 			"New UIStroke"
 		],
@@ -277,6 +293,7 @@
 		]
 	},
 	"FusionCorner": {
+		"scope": "lua, luau",
 		"prefix": [
 			"New UICorner"
 		],
@@ -287,6 +304,7 @@
 		]
 	},
 	"FusionTextSizeConstraint": {
+		"scope": "lua, luau",
 		"prefix": [
 			"New UITextSizeConstraint"
 		],
@@ -298,6 +316,7 @@
 		]
 	},
 	"FusionScale": {
+		"scope": "lua, luau",
 		"prefix": [
 			"New UIScale"
 		],
@@ -309,8 +328,9 @@
 	},
 	//Events
 	"FusionMouseEnter": {
+		"scope": "lua, luau",
 		"prefix": [
-			"MouseEnter"
+			"On MouseEnter"
 		],
 		"body": [
 			"[OnEvent \"MouseEnter\"] = function()",
@@ -319,8 +339,9 @@
 		]
 	},
 	"FusionMouseLeave": {
+		"scope": "lua, luau",
 		"prefix": [
-			"MouseLeave"
+			"On MouseLeave"
 		],
 		"body": [
 			"[OnEvent \"MouseLeave\"] = function()",
@@ -329,8 +350,9 @@
 		]
 	},
 	"FusionMouseActivated": {
+		"scope": "lua, luau",
 		"prefix": [
-			"Activated"
+			"On Activated"
 		],
 		"body": [
 			"[OnEvent \"Activated\"] = function()",
