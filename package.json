@@ -15,6 +15,10 @@
       {
         "language": "lua",
         "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "luau",
+        "path": "./snippets/snippets.code-snippets"
       }
     ]
   },

@@ -8,7 +8,8 @@
 			"local Fusion = require(game.ReplicatedStorage.Packages.Fusion)",
 			"local Value, Observer, Computed, ForKeys, ForValues, ForPairs,New, Children, OnEvent, OnChange, Out, Ref, Cleanup, cleanup, Hydrate, Tween, Spring = Fusion.Value, Fusion.Observer, Fusion.Computed, Fusion.ForKeys, Fusion.ForValues, Fusion.ForPairs,Fusion.New, Fusion.Children, Fusion.OnEvent, Fusion.OnChange, Fusion.Out, Fusion.Ref, Fusion.Cleanup, Fusion.cleanup, Fusion.Hydrate, Fusion.Tween, Fusion.Spring",
 			""
-		]
+		],
+		"description": "Require Fusion and create local variables for all Fusion methods."
 	},
 	"FusionScreenGui": {
 		"scope": "lua, luau",
@@ -18,11 +19,12 @@
 		"body": [
 			"New \"ScreenGui\" {",
 			"\t--Parent = Players.LocalPlayer.PlayerGui,",
-			"\tName = \"\",",
+			"\tName = \"${1:ScreenGui}\",",
 			"",
-			"\t[Children] = {},",
+			"\t[Children] = {${2:}},",
 			"}",
-		]
+		],
+		"description": "Create a new ScreenGui."
 	},
 	//Components
 	"FusionFrame": {
@@ -32,16 +34,17 @@
 		],
 		"body": [
 			"New \"Frame\" {",
-			"\tName =  \"\",",
-			"\tAnchorPoint =  Vector2.new(0, 0),",
-			"\tBackgroundTransparency = 1,",
-			"\tBackgroundColor3 = Color3.fromRGB(255, 255, 255),",
-			"\tPosition = UDim2.new(0, 0, 0, 0),",
-			"\tSize = UDim2.new(0, 0, 0, 0),",
+			"\tName =  \"${1:Frame}\",",
+			"\tAnchorPoint =  Vector2.new(${2:0}, ${3:0}),",
+			"\tBackgroundTransparency = ${4:1},",
+			"\tBackgroundColor3 = Color3.fromRGB(${5:255}, ${6:255}, ${7:255}),",
+			"\tPosition = UDim2.new(${8:0}, ${9:0}, ${10:0}, ${11:0}),",
+			"\tSize = UDim2.new(${12:0}, ${13:0}, ${14:0}, ${15:0}),",
 			"",
-			"\t[Children] = {},",
+			"\t[Children] = {${16:}},",
 			"}",
-		]
+		],
+		"description": "Create a new Frame."
 	},
 	"FusionScrollingFrame": {
 		"scope": "lua, luau",
@@ -50,21 +53,22 @@
 		],
 		"body": [
 			"New \"ScrollingFrame\" {",
-			"\tName =  \"\",",
-			"\tAnchorPoint =  Vector2.new(0, 0),",
-			"\tBackgroundTransparency = 1,",
-			"\tBackgroundColor3 = Color3.fromRGB(255, 255, 255),",
-			"\tPosition = UDim2.new(0, 0, 0, 0),",
-			"\tSize = UDim2.new(0, 0, 0, 0),",
-			"\tAutomaticCanvasSize = Enum.AutomaticSize.None,",
-			"\tCanvasSize = UDim2.new(0, 0, 0, 0),",
-			"\tScrollBarImageColor3 = Color3.fromRGB(0, 0, 0),",
-			"\tScrollBarThickness = 12,",
-			"\tScrollingDirection = Enum.ScrollingDirection.XY,",
+			"\tName =  \"${1:ScrollingFrame}\",",
+			"\tAnchorPoint =  Vector2.new(${2:0}, ${3:0}),",
+			"\tBackgroundTransparency = ${4:1},",
+			"\tBackgroundColor3 = Color3.fromRGB(${5:255}, ${6:255}, ${7:255}),",
+			"\tPosition = UDim2.new(${8:0}, ${9:0}, ${10:0}, ${11:0}),",
+			"\tSize = UDim2.new(${12:0}, ${13:0}, ${14:0}, ${15:0}),",
+			"\tAutomaticCanvasSize = Enum.AutomaticSize.${16:None},",
+			"\tCanvasSize = UDim2.new(${17:0}, ${18:0}, ${19:0}, ${20:0}),",
+			"\tScrollBarImageColor3 = Color3.fromRGB(${21:0}, ${22:0}, ${23:0}),",
+			"\tScrollBarThickness = ${24:12},",
+			"\tScrollingDirection = Enum.ScrollingDirection.${25:XY},",
 			"",
-			"\t[Children] = {},",
+			"\t[Children] = {${26:}},",
 			"}",
-		]
+		],
+		"description": "Create a new ScrollingFrame."
 	},
 	"FusionViewportFrame": {
 		"scope": "lua, luau",
@@ -73,20 +77,21 @@
 		],
 		"body": [
 			"New \"ViewportFrame\" {",
-			"\tName =  \"\",",
-			"\tSelectionImageObject = nil,",
-			"\tAnchorPoint =  Vector2.new(0, 0),",
-			"\tBackgroundTransparency = 1,",
-			"\tBackgroundColor3 = Color3.fromRGB(255, 255, 255),",
-			"\tPosition = UDim2.new(0, 0, 0, 0),",
-			"\tSize = UDim2.new(0, 0, 0, 0),",
-			"\tAmbient = Color3.fromRGB(200, 200, 200),",
-			"\tLightColor = Color3.fromRGB(140, 140, 140),",
-			"\tLightDirection = Vector3.new(-1, -1, -1),",
+			"\tName =  \"${1:ViewportFrame}\",",
+			"\tSelectionImageObject = ${2:nil},",
+			"\tAnchorPoint =  Vector2.new(${3:0}, ${4:0}),",
+			"\tBackgroundTransparency = ${5:1},",
+			"\tBackgroundColor3 = Color3.fromRGB(${6:255}, ${7:255}, ${8:255}),",
+			"\tPosition = UDim2.new(${9:0}, ${10:0}, ${11:0}, ${12:0}),",
+			"\tSize = UDim2.new(${13:0}, ${14:0}, ${15:0}, ${16:0}),",
+			"\tAmbient = Color3.fromRGB(${17:200}, ${18:200}, ${19:200}),",
+			"\tLightColor = Color3.fromRGB(${20:140}, ${21:140}, ${22:140}),",
+			"\tLightDirection = Vector3.new(${23:-1}, ${24:-1}, ${25:-1}),",
 			"",
-			"\t[Children] = {},",
+			"\t[Children] = {${26:}},",
 			"}",
-		]
+		],
+		"description": "Create a new ViewportFrame."
 	},
 	"FusionImageLabel": {
 		"scope": "lua, luau",
@@ -95,16 +100,17 @@
 		],
 		"body": [
 			"New \"ImageLabel\" {",
-			"\tName =  \"\",",
-			"\tAnchorPoint =  Vector2.new(0, 0),",
+			"\tName =  \"${1:ImageLabel}\",",
+			"\tAnchorPoint =  Vector2.new(${2:0}, ${3:0}),",
 			"\tBackgroundTransparency = 1,",
-			"\tPosition = UDim2.new(0, 0, 0, 0),",
-			"\tSize = UDim2.new(0, 0, 0, 0),",
-			"\tImage = \"\",",
+			"\tPosition = UDim2.new(${4:0}, ${5:0}, ${6:0}, ${7:0}),",
+			"\tSize = UDim2.new(${8:0}, ${9:0}, ${10:0}, ${11:0}),",
+			"\tImage = \"${12:rbxassetid://}\",",
 			"",
-			"\t[Children] = {},",
+			"\t[Children] = {${13:}},",
 			"}",
-		]
+		],
+		"description": "Create a new ImageLabel."
 	},
 	"FusionImageButton": {
 		"scope": "lua, luau",
@@ -113,20 +119,21 @@
 		],
 		"body": [
 			"New \"ImageLabel\" {",
-			"\tName =  \"\",",
-			"\tAnchorPoint =  Vector2.new(0, 0),",
-			"\tBackgroundTransparency = 1,",
-			"\tPosition = UDim2.new(0, 0, 0, 0),",
-			"\tSize = UDim2.new(0, 0, 0, 0),",
-			"\tImage = \"\",",
+			"\tName =  \"${1:ImageLabel}\",",
+			"\tAnchorPoint =  Vector2.new(${2:0}, ${3:0}),",
+			"\tBackgroundTransparency = ${4:1},",
+			"\tPosition = UDim2.new(${5:0}, ${6:0}, ${7:0}, ${8:0}),",
+			"\tSize = UDim2.new(${9:0}, ${10:0}, ${11:0}, ${12:0}),",
+			"\tImage = \"${13:rbxassetid://}\",",
 			"",
-			"\t[OnEvent \"Activated\"] = function()",
-			"\t--do stuff",
+			"\t[OnEvent \"${14|Activated,MouseEnter,MouseLeave|}\"] = function()",
+			"\t${15:--TODO:}",
 			"end,",
 			"",
-			"\t[Children] = {},",
+			"\t[Children] = {${16:}},",
 			"}",
-		]
+		],
+		"description": "Create a new ImageButton."
 	},
 	"FusionTextLabel": {
 		"scope": "lua, luau",
@@ -135,20 +142,21 @@
 		],
 		"body": [
 			"New \"TextLabel\" {",
-			"\tName =  \"\",",
-			"\tAnchorPoint =  Vector2.new(0, 0),",
-			"\tBackgroundTransparency = 1,",
-			"\tPosition = UDim2.new(0, 0, 0, 0),",
-			"\tSize = UDim2.new(0, 0, 0, 0),",
-			"\tFont = \"GothamBold\",",
-			"\tTextScaled = true,",
-			"\tTextColor3 = Color3.fromRGB(0, 0, 0),",
-			"\tText = \"\",",
-			"\tTextXAlignment = \"Center\",",
+			"\tName =  \"${1:TextLabel}\",",
+			"\tAnchorPoint =  Vector2.new(${2:0}, ${3:0}),",
+			"\tBackgroundTransparency = ${4:1},",
+			"\tPosition = UDim2.new(${5:0}, ${6:0}, ${7:0}, ${8:0}),",
+			"\tSize = UDim2.new(${9:0}, ${10:0}, ${11:0}, ${12:0}),",
+			"\tFont = \"${13:GothamBold}\",",
+			"\tTextScaled = ${14|true,false|},",
+			"\tTextColor3 = Color3.fromRGB(${15:0}, ${16:0}, ${17:0}),",
+			"\tText = \"${18:}\",",
+			"\tTextXAlignment = \"${19|Center,Left,Right|}\",",
 			"",
-			"\t[Children] = {},",
+			"\t[Children] = {${20:}},",
 			"}",
-		]
+		],
+		"description": "Create a new TextLabel."
 	},
 	"FusionTextButton": {
 		"scope": "lua, luau",
@@ -157,24 +165,25 @@
 		],
 		"body": [
 			"New \"TextButton\" {",
-			"\tName =  \"\",",
-			"\tAnchorPoint =  Vector2.new(0, 0),",
-			"\tBackgroundTransparency = 1,",
-			"\tPosition = UDim2.new(0, 0, 0, 0),",
-			"\tSize = UDim2.new(0, 0, 0, 0),",
-			"\tFont = \"GothamBold\",",
-			"\tTextScaled = true,",
-			"\tTextColor3 = Color3.fromRGB(0, 0, 0),",
-			"\tText = \"\",",
-			"\tTextXAlignment = \"Center\",",
+			"\tName =  \"${1:TextButton}\",",
+			"\tAnchorPoint =  Vector2.new(${2:0}, ${3:0}),",
+			"\tBackgroundTransparency = ${4:1},",
+			"\tPosition = UDim2.new(${5:0}, ${6:0}, ${7:0}, ${8:0}),",
+			"\tSize = UDim2.new(${9:0}, ${10:0}, ${11:0}, ${12:0}),",
+			"\tFont = \"${13:GothamBold}\",",
+			"\tTextScaled = ${14|true,false|},",
+			"\tTextColor3 = Color3.fromRGB(${15:0}, ${16:0}, ${17:0}),",
+			"\tText = \"${18:}\",",
+			"\tTextXAlignment = \"${19|Center,Left,Right|}\",",
 			"",
-			"\t[OnEvent \"Activated\"] = function()",
-			"\t--do stuff",
+			"\t[OnEvent \"${20|Activated,MouseEnter,MouseLeave|}\"] = function()",
+			"\t${21:--TODO:}",
 			"end,",
 			"",
-			"\t[Children] = {},",
+			"\t[Children] = {${22:}},",
 			"}",
-		]
+		],
+		"description": "Create a new TextButton."
 	},
 	"FusionTextBox": {
 		"scope": "lua, luau",
@@ -183,24 +192,25 @@
 		],
 		"body": [
 			"New \"TextBox\" {",
-			"\t--[Out \"Text\"] =",
-			"\tName =  \"\",",
-			"\tAnchorPoint =  Vector2.new(0, 0),",
-			"\tBackgroundTransparency = 1,",
-			"\tPosition = UDim2.new(0, 0, 0, 0),",
-			"\tSize = UDim2.new(0, 0, 0, 0),",
-			"\tFont = \"\",",
-			"\tTextScaled = true,",
-			"\tPlaceholderColor3 = Color3.fromRGB(0, 0, 0),",
-			"\tTextColor3 = Color3.fromRGB(0, 0, 0),",
-			"\tText = \"\",",
-			"\tTextXAlignment = \"Center\",",
-			"\tClearTextOnFocus = true,",
-			"\tPlaceholderText = \"[Search pet...]\",",
+			"\t--Out ",
+			"\tName =  \"${1:TextBox}\",",
+			"\tAnchorPoint =  Vector2.new(${2:0}, ${3:0}),",
+			"\tBackgroundTransparency = ${4:1},",
+			"\tPosition = UDim2.new(${5:0}, ${6:0}, ${7:0}, ${8:0}),",
+			"\tSize = UDim2.new(${9:0}, ${10:0}, ${11:0}, ${12:0}),",
+			"\tFont = \"${13:GothamBold}\",",
+			"\tTextScaled = ${14|true,false|},",
+			"\tPlaceholderColor3 = Color3.fromRGB(${15:0}, ${16:0}, ${17:0}),",
+			"\tTextColor3 = Color3.fromRGB(${18:0}, ${19:0}, ${20:0}),",
+			"\tText = \"${21:}\",",
+			"\tTextXAlignment = \"${22|Center,Left,Right|}\",",
+			"\tClearTextOnFocus = ${23|true,false|},",
+			"\tPlaceholderText = \"${24:Search...}\",",
 			"",
-			"\t[Children] = {},",
+			"\t[Children] = {${25:}},",
 			"}",
-		]
+		],
+		"description": "Create a new TextBox."
 	},
 	"FusionCanvasGroup": {
 		"scope": "lua, luau",
@@ -209,19 +219,20 @@
 		],
 		"body": [
 			"New \"CanvasGroup\" {",
-			"\tName = \"\",",
-			"\tGroupColor3 = Color3.fromRGB(255, 255, 255),",
-			"\tGroupTransparency = 0,",
-			"\tSelectionImageObject = nil,",
-			"\tAnchorPoint =  Vector2.new(0, 0),",
-			"\tBackgroundTransparency = 1,",
-			"\tBackgroundColor3 = Color3.fromRGB(255, 255, 255),",
-			"\tPosition = UDim2.new(0, 0, 0, 0),",
-			"\tSize = UDim2.new(0, 0, 0, 0),",
+			"\tName = \"${1:CanvasGroup}\",",
+			"\tGroupColor3 = Color3.fromRGB(${2:255}, ${3:255}, ${4:255}),",
+			"\tGroupTransparency = ${5:0},",
+			"\tSelectionImageObject = ${6:nil},",
+			"\tAnchorPoint =  Vector2.new(${7:0}, ${8:0}),",
+			"\tBackgroundTransparency = ${9:1},",
+			"\tBackgroundColor3 = Color3.fromRGB(${10:255}, ${11:255}, ${12:255}),",
+			"\tPosition = UDim2.new(${13:0}, ${14:0}, ${15:0}, ${16:0}),",
+			"\tSize = UDim2.new(${17:0}, ${18:0}, ${19:0}, ${20:0}),",
 			"",
-			"\t[Children] = {},",
+			"\t[Children] = {${21:}},",
 			"}",
-		]
+		],
+		"description": "Create a new CanvasGroup."
 	},
 	"FusionListLayout": {
 		"scope": "lua, luau",
@@ -230,13 +241,14 @@
 		],
 		"body": [
 			"New \"UIListLayout\" {",
-			"\tPadding = UDim.new(0, 0),",
-			"\tFillDirection = \"Horizontal\",",
-			"\tHorizontalAlignment = \"Left\",",
-			"\tSortOrder = \"LayoutOrder\",",
-			"\tVerticalAlignment = \"Center\",",
+			"\tPadding = UDim.new(${1:0}, ${2:0}),",
+			"\tFillDirection = \"${3|Horizontal,Vertical|}\",",
+			"\tHorizontalAlignment = \"${4|Left,Right,Center|}\",",
+			"\tVerticalAlignment = \"${5|Top,Bottom,Center|}\",",
+			"\tSortOrder = \"${6|LayoutOrder,Name|}\",",
 			"}",
-		]
+		],
+		"description": "Create a new UIListLayout."
 	},
 	"FusionGridLayout": {
 		"scope": "lua, luau",
@@ -245,15 +257,16 @@
 		],
 		"body": [
 			"New \"UIGridLayout\" {",
-			"\tCellPadding = UDim2.new(0, 0, 0, 0),",
-			"\tCellSize = UDim2.new(0, 0, 0, 0),",
-			"\tFillDirection = \"Horizontal\",",
-			"\tFillDirectionMaxCells = 0,",
-			"\tHorizontalAlignment = \"Left\",",
-			"\tSortOrder = \"LayoutOrder\",",
-			"\tVerticalAlignment = \"Top\",",
+			"\tCellPadding = UDim2.new(${1:0}, ${2:0}, ${3:0}, ${4:0}),",
+			"\tCellSize = UDim2.new(${5:0}, ${6:0}, ${7:0}, ${8:0}),",
+			"\tFillDirection = \"${9|Horizontal,Vertical|}\",",
+			"\tFillDirectionMaxCells = ${10:0},",
+			"\tHorizontalAlignment = \"${11|Left,Right,Center|}\",",
+			"\tSortOrder = \"${12|LayoutOrder,Name|}\",",
+			"\tVerticalAlignment = \"${13|Top,Bottom,Center|}\",",
 			"}",
-		]
+		],
+		"description": "Create a new UIGridLayout."
 	},
 	"FusionAspectRatio": {
 		"scope": "lua, luau",
@@ -262,11 +275,12 @@
 		],
 		"body": [
 			"New \"UIAspectRatioConstraint\" {",
-			"\tAspectRatio = 1,",
-			"\tDominantAxis = \"Width\",",
-			"\tAspectType = \"FitWithinMaxSize\",",
+			"\tAspectRatio = ${1:1},",
+			"\tDominantAxis = \"${2|Width,Height|}\",",
+			"\tAspectType = \"${3|FitWithinMaxSize,ScaleWithParentSize|}\",",
 			"}",
-		]
+		],
+		"description": "Create a new UIAspectRatioConstraint."
 	},
 	"FusionSizeConstraint": {
 		"scope": "lua, luau",
@@ -275,10 +289,11 @@
 		],
 		"body": [
 			"New \"UISizeConstraint\" {",
-			"\tMaxSize = Vector2.new(9999, 9999),",
-			"\tMinSize = Vector2.new(0, 0),",
+			"\tMaxSize = Vector2.new(${1:9999}, ${2:9999}),",
+			"\tMinSize = Vector2.new(${3:0}, ${4:0}),",
 			"}",
-		]
+		],
+		"description": "Create a new UISizeConstraint."
 	},
 	"FusionStroke": {
 		"scope": "lua, luau",
@@ -287,10 +302,11 @@
 		],
 		"body": [
 			"New \"UIStroke\" {",
-			"\tColor = Color3.fromRGB(0, 0, 0),",
-			"\tThickness = 1,",
+			"\tColor = Color3.fromRGB(${1:0}, ${2:0}, ${3:0}),",
+			"\tThickness = ${4:1},",
 			"}",
-		]
+		],
+		"description": "Create a new UIStroke."
 	},
 	"FusionCorner": {
 		"scope": "lua, luau",
@@ -299,9 +315,10 @@
 		],
 		"body": [
 			"New \"UICorner\" {",
-			"\tCornerRadius = UDim.new(0, 0)",
+			"\tCornerRadius = UDim.new(${1:0}, ${2:0})",
 			"}",
-		]
+		],
+		"description": "Create a new UICorner."
 	},
 	"FusionTextSizeConstraint": {
 		"scope": "lua, luau",
@@ -310,10 +327,11 @@
 		],
 		"body": [
 			"New \"UITextSizeConstraint\" {",
-			"\tMaxTextSize = 100,",
-			"\tMinTextSize = 1,",
+			"\tMaxTextSize = ${1:100},",
+			"\tMinTextSize = ${2:1},",
 			"}",
-		]
+		],
+		"description": "Create a new UITextSizeConstraint."
 	},
 	"FusionScale": {
 		"scope": "lua, luau",
@@ -322,11 +340,49 @@
 		],
 		"body": [
 			"New \"UIScale\" {",
-			"\tScale = 1",
+			"\tScale = ${1:1}",
 			"}",
-		]
+		],
+		"description": "Create a new UIScale."
 	},
-	//Events
+
+	//EVENTS
+	"FusionOnEvent": {
+		"scope": "lua, luau",
+		"prefix": [
+			"OnEvent"
+		],
+		"body": [
+			"[OnEvent \"${1|Activated,MouseEnter,MouseLeave|}\"] = function()",
+			"\t${2:--TODO:}",
+			"end"
+		],
+		"description": "Create a new Fusion OnEvent connection."
+	},
+	"FusionOnChange": {
+		"scope": "lua, luau",
+		"prefix": [
+			"OnChange"
+		],
+		"body": [
+			"[OnChange \"${1|Text,Value,Size,Position|}\"] = function()",
+			"\t${2:--TODO:}",
+			"end"
+		],
+		"description": "Create a new Fusion OnChange connection."
+	},
+	"FusionOut": {
+		"scope": "lua, luau",
+		"prefix": [
+			"Out"
+		],
+		"body": [
+			"[Out(\"${1|Text,Value,Size,Position|}\"] = ${2:},"
+		],
+		"description": "Create a new Fusion Out connection."
+	},
+
+	//Events (OLD METHODS)
 	"FusionMouseEnter": {
 		"scope": "lua, luau",
 		"prefix": [
@@ -334,9 +390,10 @@
 		],
 		"body": [
 			"[OnEvent \"MouseEnter\"] = function()",
-			"\t--do stuff",
+			"\t${1:--TODO:}",
 			"end"
-		]
+		],
+		"description": "Create a MouseEnter event."
 	},
 	"FusionMouseLeave": {
 		"scope": "lua, luau",
@@ -345,9 +402,10 @@
 		],
 		"body": [
 			"[OnEvent \"MouseLeave\"] = function()",
-			"\t--do stuff",
+			"\t${1:--TODO:}",
 			"end"
-		]
+		],
+		"description": "Create a MouseLeave event."
 	},
 	"FusionMouseActivated": {
 		"scope": "lua, luau",
@@ -356,8 +414,47 @@
 		],
 		"body": [
 			"[OnEvent \"Activated\"] = function()",
-			"\t--do stuff",
+			"\t${1:--TODO:}",
 			"end"
+		],
+		"description": "Create an Activated event."
+	},
+
+
+	//TODO:
+	"FusionSnippetsHelp": {
+		"scope": "lua, luau",
+		"prefix": [
+			"Fusion Help"
+		],
+		"body": [
+			"--[[",
+			"\t{require Fusion}: Require Fusion and create local variables for all Fusion methods.",
+			"\t{New ScreenGui}: Create a new ScreenGui.",
+			"\t{New Frame}: Create a new Frame.",
+			"\t{New ScrollingFrame}: Create a new ScrollingFrame.",
+			"\t{New ViewportFrame}: Create a new ViewportFrame.",
+			"\t{New ImageLabel}: Create a new ImageLabel.",
+			"\t{New ImageButton}: Create a new ImageButton.",
+			"\t{New TextLabel}: Create a new TextLabel.",
+			"\t{New TextButton}: Create a new TextButton.",
+			"\t{New TextBox}: Create a new TextBox.",
+			"\t{New CanvasGroup}: Create a new CanvasGroup.",
+			"\t{New UIListLayout}: Create a new UIListLayout.",
+			"\t{New UIGridLayout}: Create a new UIGridLayout.",
+			"\t{New UIAspectRatioConstraint}: Create a new UIAspectRatioConstraint.",
+			"\t{New UISizeConstraint}: Create a new UISizeConstraint.",
+			"\t{New UIStroke}: Create a new UIStroke.",
+			"\t{New UICorner}: Create a new UICorner.",
+			"\t{New UITextSizeConstraint}: Create a new UITextSizeConstraint.",
+			"\t{New UIScale}: Create a new UIScale.",
+			"\t{Out}: Create a new Fusion Out connection.",
+			"\t{OnChange}: Create a new Fusion OnChange connection.",
+			"\t{OnEvent}: Create a new Fusion OnEvent connection.",
+			"\t{On MouseEnter}: Create a MouseEnter event.",
+			"\t{On MouseLeave}: Create a MouseLeave event.",
+			"\t{On Activated}: Create an Activated event.",
+			"]]--",
 		]
 	}
 }
