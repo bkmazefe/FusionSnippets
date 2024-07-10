@@ -4,7 +4,7 @@ Get the VSCode extension here: https://marketplace.visualstudio.com/items?itemNa
 <img width="497" alt="sample2" src="https://github.com/bkmazefe/FusionSnippets/assets/27952818/4fff19f7-3f83-471f-950d-64bf9e85403a">
 
 A snippet extension for the Fusion UI library. This extension supports lua and luau.
-Credits to Barocena for the 'require Fusion' snippet
+Credits to @Barocena for the 'require Fusion' snippet
 
 To Use:
 * You can do 'Fusion Help' to get a full list of snippets
